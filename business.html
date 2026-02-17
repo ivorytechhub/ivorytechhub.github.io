@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Solutions | Custom Software Development | Ivory Tech Hub</title>
+  <meta name="description" content="Custom software solutions for small businesses in Uganda. Web applications, mobile apps, and system integration services.">
+  <meta name="keywords" content="business software, custom development, Uganda, small business, web applications, mobile apps, system integration">
+  <meta name="author" content="Ivory Tech Hub">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Business Solutions | Ivory Tech Hub">
+  <meta property="og:description" content="Transform your business with custom software solutions.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              dark: '#1a365d',
+              DEFAULT: '#2c5282',
+              light: '#4299e1'
+            },
+            accent: {
+              gold: '#d4af37',
+              ivory: '#fffff0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center">
+            <i class="fas fa-rocket text-primary-dark text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-xl font-['Playfair_Display']">Ivory Tech Hub</h1>
+            <p class="text-gray-300 text-xs">Innovate. Create. Succeed.</p>
+          </div>
+        </a>
+        
+        <div class="desktop-nav hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-white font-medium">Home</a>
+          <a href="projects.html" class="nav-link text-white font-medium">For Students</a>
+          <a href="business.html" class="nav-link text-white font-medium active">Business Solutions</a>
+          <a href="source-code.html" class="nav-link text-white font-medium">Free Code</a>
+          <a href="testimonials.html" class="nav-link text-white font-medium">Testimonials</a>
+          <a href="about.html" class="nav-link text-white font-medium">About</a>
+          <a href="contact.html" class="btn-primary text-sm">Contact Us</a>
+        </div>
+        
+        <button id="mobileMenuBtn" class="mobile-menu-btn md:hidden text-white p-2">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="mobileMenuClose" class="absolute top-6 right-6 text-white text-2xl">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" class="mobile-menu-link">Home</a>
+    <a href="projects.html" class="mobile-menu-link">For Students</a>
+    <a href="business.html" class="mobile-menu-link active">Business Solutions</a>
+    <a href="source-code.html" class="mobile-menu-link">Free Source Code</a>
+    <a href="testimonials.html" class="mobile-menu-link">Testimonials</a>
+    <a href="about.html" class="mobile-menu-link">About</a>
+    <a href="contact.html" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block px-4 py-2 bg-white/10 rounded-full mb-6">
+            <span class="text-accent-gold font-semibold text-sm">💼 For Small Businesses</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-['Playfair_Display'] leading-tight">
+            Custom Software Solutions for Your <span class="text-accent-gold">Business Growth</span>
+          </h1>
+          <p class="text-xl text-gray-300 mb-8">
+            Transform your business operations with tailor-made software solutions. From web applications to mobile apps, we build systems that work for you.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button onclick="requestSystem('custom')" class="btn-primary">
+              <i class="fas fa-paper-plane mr-2"></i>Request a System
+            </button>
+            <a href="#services" class="btn-secondary text-center">
+              <i class="fas fa-list mr-2"></i>View Services
+            </a>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-accent-gold/20 rounded-3xl blur-2xl"></div>
+            <div class="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white/10 rounded-xl p-6 text-center">
+                  <div class="text-4xl font-bold text-accent-gold mb-2">50+</div>
+                  <div class="text-gray-300 text-sm">Business Clients</div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-6 text-center">
+                  <div class="text-4xl font-bold text-accent-gold mb-2">100+</div>
+                  <div class="text-gray-300 text-sm">Systems Built</div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-6 text-center">
+                  <div class="text-4xl font-bold text-accent-gold mb-2">99%</div>
+                  <div class="text-gray-300 text-sm">Client Satisfaction</div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-6 text-center">
+                  <div class="text-4xl font-bold text-accent-gold mb-2">24/7</div>
+                  <div class="text-gray-300 text-sm">Support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section-padding bg-gray-50" id="services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">Our Services</h2>
+        <p class="section-subtitle">Comprehensive technology solutions for your business</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="w-16 h-16 bg-primary-blue rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-globe text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">Web Application Development</h3>
+          <p class="text-gray-600 mb-4">Custom web applications built with PHP & MySQL for robust backend systems, and HTML, CSS & JavaScript for frontend.</p>
+          <ul class="text-left text-sm text-gray-600 space-y-2 mb-4">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Responsive design</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Secure & scalable</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>SEO optimized</li>
+          </ul>
+          <button onclick="requestSystem('Web Application')" class="text-primary-blue font-semibold hover:text-primary-dark">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="w-16 h-16 bg-accent-gold rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-mobile-alt text-primary-dark text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">Mobile App Development</h3>
+          <p class="text-gray-600 mb-4">Native and cross-platform mobile applications for Android and iOS devices.</p>
+          <ul class="text-left text-sm text-gray-600 space-y-2 mb-4">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Flutter & React Native</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Native Android (Kotlin)</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>App store deployment</li>
+          </ul>
+          <button onclick="requestSystem('Mobile App')" class="text-primary-blue font-semibold hover:text-primary-dark">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-database text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">Database Solutions</h3>
+          <p class="text-gray-600 mb-4">Efficient database design, optimization, and management for your data needs.</p>
+          <ul class="text-left text-sm text-gray-600 space-y-2 mb-4">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>MySQL & PostgreSQL</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>MongoDB & Firebase</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Data migration</li>
+          </ul>
+          <button onclick="requestSystem('Database Solution')" class="text-primary-blue font-semibold hover:text-primary-dark">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-plug text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">System Integration</h3>
+          <p class="text-gray-600 mb-4">Connect your existing systems with third-party APIs and services seamlessly.</p>
+          <ul class="text-left text-sm text-gray-600 space-y-2 mb-4">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>API development</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Mobile Money integration</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Third-party APIs</li>
+          </ul>
+          <button onclick="requestSystem('System Integration')" class="text-primary-blue font-semibold hover:text-primary-dark">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+        
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-shopping-cart text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">E-Commerce Solutions</h3>
+          <p class="text-gray-600 mb-4">Complete online store solutions with payment integration and inventory management.</p>
+          <ul class="text-left text-sm text-gray-600 space-y-2 mb-4">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Product catalog</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Payment gateways</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Order management</li>
+          </ul>
+          <button onclick="requestSystem('E-Commerce Solution')" class="text-primary-blue font-semibold hover:text-primary-dark">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+        
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="w-16 h-16 bg-blue-400 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-tools text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">Maintenance & Support</h3>
+          <p class="text-gray-600 mb-4">Ongoing maintenance, updates, and technical support for your systems.</p>
+          <ul class="text-left text-sm text-gray-600 space-y-2 mb-4">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Bug fixes</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Security updates</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Feature enhancements</li>
+          </ul>
+          <button onclick="requestSystem('Maintenance & Support')" class="text-primary-blue font-semibold hover:text-primary-dark">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">Industries We Serve</h2>
+        <p class="section-subtitle">Solutions tailored for various business sectors</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-hospital text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Healthcare</h3>
+          <p class="text-gray-600 text-sm">Hospital management, patient records, appointment systems</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-graduation-cap text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Education</h3>
+          <p class="text-gray-600 text-sm">School management, e-learning platforms, student portals</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-store text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Retail</h3>
+          <p class="text-gray-600 text-sm">POS systems, inventory management, e-commerce</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-building text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Corporate</h3>
+          <p class="text-gray-600 text-sm">HR systems, CRM, project management tools</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-utensils text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Hospitality</h3>
+          <p class="text-gray-600 text-sm">Restaurant management, hotel booking, food delivery</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-truck text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Logistics</h3>
+          <p class="text-gray-600 text-sm">Fleet management, tracking systems, delivery apps</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-landmark text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Finance</h3>
+          <p class="text-gray-600 text-sm">Accounting systems, mobile money integration, reporting</p>
+        </div>
+        
+        <div class="card p-6 text-center hover:border-accent-gold">
+          <i class="fas fa-home text-4xl text-primary-blue mb-4"></i>
+          <h3 class="font-bold text-primary-dark mb-2">Real Estate</h3>
+          <p class="text-gray-600 text-sm">Property management, listing platforms, tenant portals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">Our Development Process</h2>
+        <p class="section-subtitle">A proven methodology for successful project delivery</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+            <i class="fas fa-comments text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark mb-2">1. Consultation</h3>
+          <p class="text-gray-600 text-sm">We discuss your requirements and understand your business needs.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+            <i class="fas fa-pencil-ruler text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark mb-2">2. Planning</h3>
+          <p class="text-gray-600 text-sm">We create a detailed project plan with timelines and milestones.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+            <i class="fas fa-code text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark mb-2">3. Development</h3>
+          <p class="text-gray-600 text-sm">Our team builds your solution using best practices and modern tech.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+            <i class="fas fa-vial text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark mb-2">4. Testing</h3>
+          <p class="text-gray-600 text-sm">Rigorous testing ensures your system is bug-free and reliable.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4 text-primary-dark">
+            <i class="fas fa-rocket text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark mb-2">5. Deployment</h3>
+          <p class="text-gray-600 text-sm">We launch your system and provide training and support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">Business Packages</h2>
+        <p class="section-subtitle">Flexible pricing for businesses of all sizes</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Starter -->
+        <div class="pricing-card">
+          <h3 class="font-bold text-primary-dark text-xl mb-2">Starter</h3>
+          <p class="text-gray-600 text-sm mb-6">Perfect for small businesses</p>
+          <div class="text-4xl font-bold text-primary-dark mb-6">UGX 500K<span class="text-lg text-gray-500">+</span></div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">5-page website</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Basic features</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Mobile responsive</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">1 month support</span>
+            </li>
+          </ul>
+          <button onclick="requestSystem('Starter Package')" class="btn-outline w-full">Get Started</button>
+        </div>
+        
+        <!-- Professional -->
+        <div class="pricing-card featured">
+          <h3 class="font-bold text-primary-dark text-xl mb-2">Professional</h3>
+          <p class="text-gray-600 text-sm mb-6">For growing businesses</p>
+          <div class="text-4xl font-bold text-primary-dark mb-6">UGX 1.5M<span class="text-lg text-gray-500">+</span></div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Custom web application</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Database integration</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">User authentication</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Payment integration</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">3 months support</span>
+            </li>
+          </ul>
+          <button onclick="requestSystem('Professional Package')" class="btn-primary w-full">Get Started</button>
+        </div>
+        
+        <!-- Enterprise -->
+        <div class="pricing-card">
+          <h3 class="font-bold text-primary-dark text-xl mb-2">Enterprise</h3>
+          <p class="text-gray-600 text-sm mb-6">Full-scale solutions</p>
+          <div class="text-4xl font-bold text-primary-dark mb-6">Custom</div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Multi-platform solution</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Web + Mobile apps</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Advanced features</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">API integrations</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">12 months support</span>
+            </li>
+          </ul>
+          <button onclick="requestSystem('Enterprise Package')" class="btn-outline w-full">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-dark to-primary-blue">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-['Playfair_Display']">Ready to Transform Your Business?</h2>
+      <p class="text-xl text-gray-300 mb-10">Let's discuss how we can help you achieve your business goals with custom software solutions.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="requestSystem('custom')" class="btn-primary">
+          <i class="fas fa-paper-plane mr-2"></i>Request a System
+        </button>
+        <a href="contact.html" class="btn-secondary">
+          <i class="fas fa-phone mr-2"></i>Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-accent-gold rounded-lg flex items-center justify-center">
+              <i class="fas fa-rocket text-primary-dark"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg font-['Playfair_Display']">Ivory Tech Hub</h3>
+          </div>
+          <p class="text-gray-400 mb-6">Transforming businesses through innovative technology solutions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="footer-link">Web Development</a></li>
+            <li><a href="#" class="footer-link">Mobile Apps</a></li>
+            <li><a href="#" class="footer-link">Database Solutions</a></li>
+            <li><a href="#" class="footer-link">System Integration</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Contact</h4>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-phone text-accent-gold"></i>
+              <span class="text-gray-400">0706131928</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-accent-gold"></i>
+              <span class="text-gray-400">emmanuelniringiyimaana@gmail.com</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fab fa-whatsapp text-accent-gold"></i>
+              <span class="text-gray-400">WhatsApp Available</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2024 Ivory Tech Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20interested%20in%20your%20business%20solutions." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    function requestSystem(systemType) {
+      const message = systemType === 'custom' 
+        ? "Hello Ivory Tech Hub! I'm interested in requesting a custom software system for my business. Please provide more information about your services and pricing."
+        : `Hello Ivory Tech Hub! I'm interested in the ${systemType}. Please provide more information about pricing and features.`;
+      const phoneNumber = '256706131928';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>

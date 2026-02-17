@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Get in Touch with Ivory Tech Hub</title>
+  <meta name="description" content="Contact Ivory Tech Hub for project inquiries, custom software development, or support. Reach us via WhatsApp, email, or phone.">
+  <meta name="keywords" content="contact Ivory Tech Hub, WhatsApp, Uganda, software development, student projects, business solutions">
+  <meta name="author" content="Ivory Tech Hub">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us | Ivory Tech Hub">
+  <meta property="og:description" content="Get in touch for project inquiries and support.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              dark: '#1a365d',
+              DEFAULT: '#2c5282',
+              light: '#4299e1'
+            },
+            accent: {
+              gold: '#d4af37',
+              ivory: '#fffff0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center">
+            <i class="fas fa-rocket text-primary-dark text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-xl font-['Playfair_Display']">Ivory Tech Hub</h1>
+            <p class="text-gray-300 text-xs">Innovate. Create. Succeed.</p>
+          </div>
+        </a>
+        
+        <div class="desktop-nav hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-white font-medium">Home</a>
+          <a href="projects.html" class="nav-link text-white font-medium">For Students</a>
+          <a href="business.html" class="nav-link text-white font-medium">Business Solutions</a>
+          <a href="source-code.html" class="nav-link text-white font-medium">Free Code</a>
+          <a href="testimonials.html" class="nav-link text-white font-medium">Testimonials</a>
+          <a href="about.html" class="nav-link text-white font-medium">About</a>
+          <a href="contact.html" class="btn-primary text-sm">Contact Us</a>
+        </div>
+        
+        <button id="mobileMenuBtn" class="mobile-menu-btn md:hidden text-white p-2">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="mobileMenuClose" class="absolute top-6 right-6 text-white text-2xl">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" class="mobile-menu-link">Home</a>
+    <a href="projects.html" class="mobile-menu-link">For Students</a>
+    <a href="business.html" class="mobile-menu-link">Business Solutions</a>
+    <a href="source-code.html" class="mobile-menu-link">Free Source Code</a>
+    <a href="testimonials.html" class="mobile-menu-link">Testimonials</a>
+    <a href="about.html" class="mobile-menu-link">About</a>
+    <a href="contact.html" class="mobile-menu-link active">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-block px-4 py-2 bg-white/10 rounded-full mb-6">
+          <span class="text-accent-gold font-semibold text-sm">📞 Get in Touch</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-['Playfair_Display']">
+          Contact <span class="text-accent-gold">Ivory Tech Hub</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Have a question or ready to start your project? We're here to help. Reach out to us through any of the channels below.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 -mt-16 relative z-10">
+        <!-- WhatsApp -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fab fa-whatsapp text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">WhatsApp</h3>
+          <p class="text-gray-600 mb-4">Fastest response time</p>
+          <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!" target="_blank" class="text-green-600 font-semibold hover:text-green-700">
+            0706131928
+          </a>
+        </div>
+        
+        <!-- Phone -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-phone text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Phone</h3>
+          <p class="text-gray-600 mb-4">Call us directly</p>
+          <a href="tel:+256706131928" class="text-primary-blue font-semibold hover:text-primary-dark">
+            0706131928
+          </a>
+        </div>
+        
+        <!-- Email -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-envelope text-primary-dark text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Email</h3>
+          <p class="text-gray-600 mb-4">Send us an email</p>
+          <a href="mailto:emmanuelniringiyimaana@gmail.com" class="text-primary-blue font-semibold hover:text-primary-dark">
+            emmanuelniringiyimaana@gmail.com
+          </a>
+        </div>
+        
+        <!-- Location -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Location</h3>
+          <p class="text-gray-600 mb-4">Based in</p>
+          <span class="text-primary-blue font-semibold">Kampala, Uganda</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Payment Info Section -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="section-title">Send Us a Message</h2>
+          <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+          
+          <form id="contactForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="form-label">Your Name *</label>
+                <input type="text" name="name" required class="form-input" placeholder="John Doe">
+              </div>
+              <div>
+                <label class="form-label">Your Email *</label>
+                <input type="email" name="email" required class="form-input" placeholder="john@example.com">
+              </div>
+            </div>
+            
+            <div>
+              <label class="form-label">Phone Number</label>
+              <input type="tel" name="phone" class="form-input" placeholder="0706131928">
+            </div>
+            
+            <div>
+              <label class="form-label">Subject *</label>
+              <select name="subject" required class="form-input">
+                <option value="">Select a subject</option>
+                <option value="student-project">Student Project Inquiry</option>
+                <option value="business-solution">Business Solution Inquiry</option>
+                <option value="free-source-code">Free Source Code Question</option>
+                <option value="premium-resource">Premium Resource Purchase</option>
+                <option value="support">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label class="form-label">Message *</label>
+              <textarea name="message" required rows="5" class="form-input" placeholder="Tell us about your project or question..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary w-full">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+          </form>
+          
+          <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+            <p class="text-sm text-primary-blue">
+              <i class="fas fa-info-circle mr-2"></i>
+              <strong>Tip:</strong> For faster response, reach out via WhatsApp. We typically respond within 1-2 hours during business hours.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Payment Information -->
+        <div>
+          <h2 class="section-title">Payment Information</h2>
+          <p class="text-gray-600 mb-8">We accept payments via Mobile Money in Ugandan Shillings (UGX).</p>
+          
+          <div class="payment-card mb-8">
+            <h3 class="text-2xl font-bold mb-6 flex items-center">
+              <i class="fas fa-mobile-alt mr-3 text-accent-gold"></i>
+              Mobile Money Payment
+            </h3>
+            
+            <div class="space-y-6">
+              <!-- MTN Mobile Money -->
+              <div class="bg-white/10 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-signal text-primary-dark text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">MTN Mobile Money</h4>
+                    <p class="text-gray-300 text-sm">Send to this number</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between bg-white/10 rounded-lg p-4">
+                  <span class="text-accent-gold font-mono text-xl font-bold">0706131928</span>
+                  <button onclick="copyToClipboard('0706131928')" class="text-white hover:text-accent-gold">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Airtel Money -->
+              <div class="bg-white/10 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-signal text-white text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">Airtel Money</h4>
+                    <p class="text-gray-300 text-sm">Send to this number</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between bg-white/10 rounded-lg p-4">
+                  <span class="text-accent-gold font-mono text-xl font-bold">0706131928</span>
+                  <button onclick="copyToClipboard('0706131928')" class="text-white hover:text-accent-gold">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-white/10 rounded-lg">
+              <h4 class="font-bold mb-2 flex items-center">
+                <i class="fas fa-info-circle text-accent-gold mr-2"></i>
+                How to Pay
+              </h4>
+              <ol class="text-gray-300 text-sm space-y-2 list-decimal list-inside">
+                <li>Dial *165# for MTN or *185# for Airtel</li>
+                <li>Select "Send Money"</li>
+                <li>Enter the number: <span class="text-accent-gold">0706131928</span></li>
+                <li>Enter the amount</li>
+                <li>Enter your PIN to confirm</li>
+                <li>Take a screenshot of the confirmation</li>
+                <li>Send the screenshot via WhatsApp</li>
+              </ol>
+            </div>
+          </div>
+          
+          <!-- Working Hours -->
+          <div class="card p-6">
+            <h3 class="font-bold text-primary-dark text-lg mb-4 flex items-center">
+              <i class="fas fa-clock text-accent-gold mr-2"></i>
+              Working Hours
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex justify-between">
+                <span class="text-gray-600">Monday - Friday</span>
+                <span class="font-semibold text-primary-dark">8:00 AM - 8:00 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="text-gray-600">Saturday</span>
+                <span class="font-semibold text-primary-dark">9:00 AM - 5:00 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="text-gray-600">Sunday</span>
+                <span class="font-semibold text-primary-dark">Emergency Only</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact Options -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="section-title mx-auto">Quick Contact Options</h2>
+        <p class="section-subtitle">Choose the best way to reach us based on your needs</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- For Students -->
+        <div class="card p-8 text-center hover:border-primary-blue">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-graduation-cap text-white text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">For Students</h3>
+          <p class="text-gray-600 mb-6">Need help with your final year project? Get in touch for project ideas, quotes, and support.</p>
+          <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20a%20student%20and%20need%20help%20with%20my%20final%20year%20project." target="_blank" class="btn-primary w-full">
+            <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+          </a>
+        </div>
+        
+        <!-- For Businesses -->
+        <div class="card p-8 text-center hover:border-accent-gold">
+          <div class="w-20 h-20 bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-briefcase text-primary-dark text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">For Businesses</h3>
+          <p class="text-gray-600 mb-6">Looking for custom software solutions? Let's discuss how we can help your business grow.</p>
+          <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20interested%20in%20business%20software%20solutions." target="_blank" class="btn-primary w-full">
+            <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+          </a>
+        </div>
+        
+        <!-- For Support -->
+        <div class="card p-8 text-center hover:border-green-500">
+          <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-headset text-white text-3xl"></i>
+          </div>
+          <h3 class="font-bold text-primary-dark text-xl mb-3">Technical Support</h3>
+          <p class="text-gray-600 mb-6">Have an issue with a project we delivered? We're here to help with any technical problems.</p>
+          <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I%20need%20technical%20support." target="_blank" class="btn-primary w-full">
+            <i class="fab fa-whatsapp mr-2"></i>Get Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="section-title mx-auto">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions</p>
+      </div>
+      
+      <div class="space-y-4">
+        <div class="card p-6">
+          <h3 class="font-bold text-primary-dark text-lg mb-2 flex items-center">
+            <i class="fas fa-question-circle text-accent-gold mr-2"></i>
+            How long does it take to complete a student project?
+          </h3>
+          <p class="text-gray-600">Most student projects are completed within 1-2 weeks, depending on complexity. We always discuss timelines upfront and deliver on schedule.</p>
+        </div>
+        
+        <div class="card p-6">
+          <h3 class="font-bold text-primary-dark text-lg mb-2 flex items-center">
+            <i class="fas fa-question-circle text-accent-gold mr-2"></i>
+            What payment methods do you accept?
+          </h3>
+          <p class="text-gray-600">We accept MTN Mobile Money and Airtel Money in Ugandan Shillings (UGX). For business clients, we can also arrange bank transfers.</p>
+        </div>
+        
+        <div class="card p-6">
+          <h3 class="font-bold text-primary-dark text-lg mb-2 flex items-center">
+            <i class="fas fa-question-circle text-accent-gold mr-2"></i>
+            Do you provide support after project delivery?
+          </h3>
+          <p class="text-gray-600">Yes! All our projects come with free support (1-3 months depending on the package). We're always available to help with any issues.</p>
+        </div>
+        
+        <div class="card p-6">
+          <h3 class="font-bold text-primary-dark text-lg mb-2 flex items-center">
+            <i class="fas fa-question-circle text-accent-gold mr-2"></i>
+            Can I request changes to my project?
+          </h3>
+          <p class="text-gray-600">Absolutely! We include a certain number of revisions in each package. Additional changes can be accommodated at a reasonable cost.</p>
+        </div>
+        
+        <div class="card p-6">
+          <h3 class="font-bold text-primary-dark text-lg mb-2 flex items-center">
+            <i class="fas fa-question-circle text-accent-gold mr-2"></i>
+            Is the source code included?
+          </h3>
+          <p class="text-gray-600">Yes, all projects come with complete, well-documented source code. For free resources, you can download directly from GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-dark to-primary-blue">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-['Playfair_Display']">Ready to Get Started?</h2>
+      <p class="text-xl text-gray-300 mb-10">Don't wait! Reach out today and let's discuss how we can help you achieve your goals.</p>
+      <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20ready%20to%20start%20my%20project." target="_blank" class="btn-primary inline-block">
+        <i class="fab fa-whatsapp mr-2"></i>Start a Conversation
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-accent-gold rounded-lg flex items-center justify-center">
+              <i class="fas fa-rocket text-primary-dark"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg font-['Playfair_Display']">Ivory Tech Hub</h3>
+          </div>
+          <p class="text-gray-400 mb-6">Your trusted partner for academic and business technology solutions.</p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="projects.html" class="footer-link">For Students</a></li>
+            <li><a href="business.html" class="footer-link">Business Solutions</a></li>
+            <li><a href="source-code.html" class="footer-link">Free Source Code</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Support</h4>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Contact</h4>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+              <i class="fab fa-whatsapp text-accent-gold"></i>
+              <span class="text-gray-400">0706131928</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-accent-gold"></i>
+              <span class="text-gray-400">emmanuelniringiyimaana@gmail.com</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-map-marker-alt text-accent-gold"></i>
+              <span class="text-gray-400">Kampala, Uganda</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2024 Ivory Tech Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const subject = formData.get('subject');
+      const message = formData.get('message');
+      
+      // Create WhatsApp message
+      const whatsappMessage = `Hello Ivory Tech Hub!\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
+      
+      // Open WhatsApp with pre-filled message
+      const phoneNumber = '256706131928';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappUrl, '_blank');
+    });
+    
+    // Copy to clipboard function
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Phone number copied to clipboard!');
+      }).catch(() => {
+        alert('Failed to copy. Please copy manually.');
+      });
+    }
+  </script>
+</body>
+</html>

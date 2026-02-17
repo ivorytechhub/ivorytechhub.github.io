@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivory Tech Hub | Empowering Students & Businesses with Technology</title>
+  <meta name="description" content="Ivory Tech Hub provides final-year project assistance for university students and custom software solutions for small businesses in Uganda.">
+  <meta name="keywords" content="Ivory Tech Hub, final year projects, software development, Uganda, student projects, business solutions, mobile money, web development">
+  <meta name="author" content="Ivory Tech Hub">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ivory Tech Hub | Empowering Students & Businesses">
+  <meta property="og:description" content="Your partner for academic excellence and business growth through technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ivorytechhub.github.io">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ivory Tech Hub">
+  <meta name="twitter:description" content="Empowering students and businesses with technology solutions.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              dark: '#1a365d',
+              DEFAULT: '#2c5282',
+              light: '#4299e1'
+            },
+            accent: {
+              gold: '#d4af37',
+              ivory: '#fffff0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center">
+            <i class="fas fa-rocket text-primary-dark text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-xl font-['Playfair_Display']">Ivory Tech Hub</h1>
+            <p class="text-gray-300 text-xs">Innovate. Create. Succeed.</p>
+          </div>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="desktop-nav hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-white font-medium active">Home</a>
+          <a href="projects.html" class="nav-link text-white font-medium">For Students</a>
+          <a href="business.html" class="nav-link text-white font-medium">Business Solutions</a>
+          <a href="source-code.html" class="nav-link text-white font-medium">Free Code</a>
+          <a href="testimonials.html" class="nav-link text-white font-medium">Testimonials</a>
+          <a href="about.html" class="nav-link text-white font-medium">About</a>
+          <a href="contact.html" class="btn-primary text-sm">Contact Us</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn md:hidden text-white p-2">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="mobileMenuClose" class="absolute top-6 right-6 text-white text-2xl">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" class="mobile-menu-link active">Home</a>
+    <a href="projects.html" class="mobile-menu-link">For Students</a>
+    <a href="business.html" class="mobile-menu-link">Business Solutions</a>
+    <a href="source-code.html" class="mobile-menu-link">Free Source Code</a>
+    <a href="testimonials.html" class="mobile-menu-link">Testimonials</a>
+    <a href="about.html" class="mobile-menu-link">About</a>
+    <a href="contact.html" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section min-h-screen flex items-center pt-20">
+    <div class="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left">
+          <div class="inline-block px-4 py-2 bg-white/10 rounded-full mb-6">
+            <span class="text-accent-gold font-semibold text-sm">🎓 Trusted by 500+ Students & Businesses</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-['Playfair_Display'] leading-tight">
+            Empowering Your <span class="text-accent-gold">Digital Future</span>
+          </h1>
+          <p class="text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
+            Your trusted partner for final-year academic projects and custom business software solutions. Transform your ideas into reality with Ivory Tech Hub.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="projects.html" class="btn-primary text-center">
+              <i class="fas fa-graduation-cap mr-2"></i>For Students
+            </a>
+            <a href="business.html" class="btn-secondary text-center">
+              <i class="fas fa-briefcase mr-2"></i>For Businesses
+            </a>
+          </div>
+          <div class="mt-10 flex items-center justify-center lg:justify-start space-x-8">
+            <div class="text-center">
+              <div class="stat-number text-3xl">500+</div>
+              <div class="text-gray-400 text-sm">Projects Delivered</div>
+            </div>
+            <div class="text-center">
+              <div class="stat-number text-3xl">98%</div>
+              <div class="text-gray-400 text-sm">Success Rate</div>
+            </div>
+            <div class="text-center">
+              <div class="stat-number text-3xl">50+</div>
+              <div class="text-gray-400 text-sm">Business Clients</div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-accent-gold/20 rounded-3xl blur-2xl"></div>
+            <div class="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gradient-to-br from-primary-blue to-primary-dark p-6 rounded-xl text-white">
+                  <i class="fas fa-code text-3xl text-accent-gold mb-4"></i>
+                  <h3 class="font-bold mb-2">Custom Development</h3>
+                  <p class="text-sm text-gray-300">Tailored solutions for your needs</p>
+                </div>
+                <div class="bg-gradient-to-br from-accent-gold to-yellow-600 p-6 rounded-xl text-primary-dark">
+                  <i class="fas fa-mobile-alt text-3xl mb-4"></i>
+                  <h3 class="font-bold mb-2">Mobile Money</h3>
+                  <p class="text-sm">Easy UGX payments</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-500 to-green-700 p-6 rounded-xl text-white">
+                  <i class="fas fa-download text-3xl mb-4"></i>
+                  <h3 class="font-bold mb-2">Free Resources</h3>
+                  <p class="text-sm">Open source code</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 p-6 rounded-xl text-white">
+                  <i class="fas fa-headset text-3xl mb-4"></i>
+                  <h3 class="font-bold mb-2">24/7 Support</h3>
+                  <p class="text-sm">Always here to help</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">Why Choose Ivory Tech Hub?</h2>
+        <p class="section-subtitle">We combine technical expertise with a deep understanding of your needs</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="card p-8">
+          <div class="feature-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary-dark mb-3">Student-Focused</h3>
+          <p class="text-gray-600">Comprehensive final-year project assistance with documentation, source code, and guidance to ensure academic success.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="card p-8">
+          <div class="feature-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary-dark mb-3">Business Solutions</h3>
+          <p class="text-gray-600">Custom software systems designed to streamline operations and drive growth for small businesses.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="card p-8">
+          <div class="feature-icon">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary-dark mb-3">Mobile Money Payments</h3>
+          <p class="text-gray-600">Convenient payment options via MTN Mobile Money and Airtel Money in Ugandan Shillings (UGX).</p>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="card p-8">
+          <div class="feature-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary-dark mb-3">Free Source Code</h3>
+          <p class="text-gray-600">Access a library of free templates and small systems to kickstart your learning journey.</p>
+        </div>
+        
+        <!-- Feature 5 -->
+        <div class="card p-8">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary-dark mb-3">Timely Delivery</h3>
+          <p class="text-gray-600">We understand deadlines. Your project will be delivered on time, every time.</p>
+        </div>
+        
+        <!-- Feature 6 -->
+        <div class="card p-8">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary-dark mb-3">Ongoing Support</h3>
+          <p class="text-gray-600">Post-project support and maintenance to ensure everything runs smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview Section -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="section-title">Services Tailored for You</h2>
+          <p class="text-gray-600 mb-8 text-lg">Whether you're a student looking to ace your final year project or a business seeking digital transformation, we have the perfect solution.</p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-primary-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-laptop-code text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-primary-dark text-lg">Web Application Development</h3>
+                <p class="text-gray-600">Full-stack web applications using PHP & MySQL for dynamic systems, and HTML, CSS & JavaScript for static websites.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-mobile-alt text-primary-dark"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-primary-dark text-lg">Mobile App Development</h3>
+                <p class="text-gray-600">Android and cross-platform mobile applications for your business needs.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-database text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-primary-dark text-lg">Database Design</h3>
+                <p class="text-gray-600">Efficient database architecture and management systems for your data.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <a href="business.html" class="btn-primary inline-block">
+              Explore All Services <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-r from-primary-blue to-accent-gold rounded-3xl opacity-20 blur-xl"></div>
+          <div class="relative bg-white rounded-2xl shadow-2xl p-8">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="font-bold text-primary-dark text-xl">Popular Projects</h3>
+              <span class="badge badge-free">Updated Weekly</span>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-hospital text-primary-blue text-xl"></i>
+                  <div>
+                    <p class="font-semibold text-primary-dark">Hospital Management System</p>
+                    <p class="text-sm text-gray-500">PHP & MySQL</p>
+                  </div>
+                </div>
+                <span class="badge badge-free">Free</span>
+              </div>
+              
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-store text-primary-blue text-xl"></i>
+                  <div>
+                    <p class="font-semibold text-primary-dark">E-Commerce Platform</p>
+                    <p class="text-sm text-gray-500">React & Node.js</p>
+                  </div>
+                </div>
+                <span class="badge badge-premium">Premium</span>
+              </div>
+              
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-school text-primary-blue text-xl"></i>
+                  <div>
+                    <p class="font-semibold text-primary-dark">School Management System</p>
+                    <p class="text-sm text-gray-500">Python & Django</p>
+                  </div>
+                </div>
+                <span class="badge badge-free">Free</span>
+              </div>
+              
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-money-bill-wave text-primary-blue text-xl"></i>
+                  <div>
+                    <p class="font-semibold text-primary-dark">Mobile Money API Integration</p>
+                    <p class="text-sm text-gray-500">JavaScript & REST API</p>
+                  </div>
+                </div>
+                <span class="badge badge-premium">Premium</span>
+              </div>
+            </div>
+            
+            <a href="source-code.html" class="block mt-6 text-center text-primary-blue font-semibold hover:text-primary-dark">
+              View All Resources <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-dark to-primary-blue">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-['Playfair_Display']">Ready to Get Started?</h2>
+      <p class="text-xl text-gray-300 mb-10">Join hundreds of satisfied students and businesses who have transformed their ideas into reality with Ivory Tech Hub.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn-primary">
+          <i class="fas fa-paper-plane mr-2"></i>Get a Quote
+        </a>
+        <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20interested%20in%20your%20services." target="_blank" class="btn-secondary">
+          <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Company Info -->
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-accent-gold rounded-lg flex items-center justify-center">
+              <i class="fas fa-rocket text-primary-dark"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg font-['Playfair_Display']">Ivory Tech Hub</h3>
+          </div>
+          <p class="text-gray-400 mb-6">Empowering students and businesses with innovative technology solutions since 2020.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="projects.html" class="footer-link">For Students</a></li>
+            <li><a href="business.html" class="footer-link">Business Solutions</a></li>
+            <li><a href="source-code.html" class="footer-link">Free Source Code</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-bold mb-6">Our Services</h4>
+          <ul class="space-y-3">
+            <li><a href="business.html" class="footer-link">Web Development</a></li>
+            <li><a href="business.html" class="footer-link">Mobile Apps</a></li>
+            <li><a href="projects.html" class="footer-link">Final Year Projects</a></li>
+            <li><a href="business.html" class="footer-link">Database Design</a></li>
+            <li><a href="business.html" class="footer-link">System Integration</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="text-white font-bold mb-6">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-3">
+              <i class="fas fa-map-marker-alt text-accent-gold mt-1"></i>
+              <span class="text-gray-400">Kampala, Uganda</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-phone text-accent-gold"></i>
+              <span class="text-gray-400">0706131928</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-accent-gold"></i>
+              <span class="text-gray-400">emmanuelniringiyimaana@gmail.com</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fab fa-whatsapp text-accent-gold"></i>
+              <span class="text-gray-400">WhatsApp: 0706131928</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">&copy; 2024 Ivory Tech Hub. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 text-sm hover:text-accent-gold">Privacy Policy</a>
+          <a href="#" class="text-gray-400 text-sm hover:text-accent-gold">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20interested%20in%20your%20services." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

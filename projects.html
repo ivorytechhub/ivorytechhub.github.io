@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Students | Final Year Project Ideas & Assistance | Ivory Tech Hub</title>
+  <meta name="description" content="Get expert assistance with your final year project. Browse project ideas, download free source code, and achieve academic success with Ivory Tech Hub.">
+  <meta name="keywords" content="final year projects, student projects, project ideas, source code, academic projects, Uganda universities, BSc projects, diploma projects">
+  <meta name="author" content="Ivory Tech Hub">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="For Students | Final Year Project Assistance">
+  <meta property="og:description" content="Expert help for your final year projects. Free source code and custom development.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              dark: '#1a365d',
+              DEFAULT: '#2c5282',
+              light: '#4299e1'
+            },
+            accent: {
+              gold: '#d4af37',
+              ivory: '#fffff0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center">
+            <i class="fas fa-rocket text-primary-dark text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-xl font-['Playfair_Display']">Ivory Tech Hub</h1>
+            <p class="text-gray-300 text-xs">Innovate. Create. Succeed.</p>
+          </div>
+        </a>
+        
+        <div class="desktop-nav hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-white font-medium">Home</a>
+          <a href="projects.html" class="nav-link text-white font-medium active">For Students</a>
+          <a href="business.html" class="nav-link text-white font-medium">Business Solutions</a>
+          <a href="source-code.html" class="nav-link text-white font-medium">Free Code</a>
+          <a href="testimonials.html" class="nav-link text-white font-medium">Testimonials</a>
+          <a href="about.html" class="nav-link text-white font-medium">About</a>
+          <a href="contact.html" class="btn-primary text-sm">Contact Us</a>
+        </div>
+        
+        <button id="mobileMenuBtn" class="mobile-menu-btn md:hidden text-white p-2">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="mobileMenuClose" class="absolute top-6 right-6 text-white text-2xl">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" class="mobile-menu-link">Home</a>
+    <a href="projects.html" class="mobile-menu-link active">For Students</a>
+    <a href="business.html" class="mobile-menu-link">Business Solutions</a>
+    <a href="source-code.html" class="mobile-menu-link">Free Source Code</a>
+    <a href="testimonials.html" class="mobile-menu-link">Testimonials</a>
+    <a href="about.html" class="mobile-menu-link">About</a>
+    <a href="contact.html" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-block px-4 py-2 bg-white/10 rounded-full mb-6">
+          <span class="text-accent-gold font-semibold text-sm">🎓 For University Students</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-['Playfair_Display']">
+          Ace Your <span class="text-accent-gold">Final Year Project</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Get expert assistance, ready-made project ideas, and free source code to help you succeed in your academic journey.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#project-ideas" class="btn-primary">
+            <i class="fas fa-lightbulb mr-2"></i>Browse Ideas
+          </a>
+          <a href="source-code.html" class="btn-secondary">
+            <i class="fas fa-download mr-2"></i>Free Downloads
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">How It Works</h2>
+        <p class="section-subtitle">Simple steps to get your project completed</p>
+      </div>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">1</div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Choose a Project</h3>
+          <p class="text-gray-600">Browse our list of project ideas or propose your own custom idea.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">2</div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Contact Us</h3>
+          <p class="text-gray-600">Reach out via WhatsApp or email to discuss your requirements.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">3</div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Make Payment</h3>
+          <p class="text-gray-600">Pay via Mobile Money (MTN or Airtel) in UGX.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4 text-primary-dark text-2xl font-bold">4</div>
+          <h3 class="font-bold text-primary-dark text-lg mb-2">Receive Project</h3>
+          <p class="text-gray-600">Get your complete project with source code and documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Categories -->
+  <section class="section-padding" id="project-ideas">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="section-title mx-auto">Project Ideas by Category</h2>
+        <p class="section-subtitle">Choose from our curated list of project ideas</p>
+      </div>
+      
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button class="filter-btn active px-6 py-2 bg-primary-blue text-white rounded-full font-medium" data-filter="all">All</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="web">Web Applications</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="desktop">Desktop</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="ai">AI/ML</button>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="searchResults">
+        <!-- Web Project 1 -->
+        <div class="project-card filter-item web">
+          <div class="card-image">
+            <i class="fas fa-hospital-alt"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Hospital Management System</h3>
+            <p class="text-gray-600 mb-4">Complete HMS with patient records, appointments, billing, and pharmacy management.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 150,000</span>
+              <button onclick="requestProject('Hospital Management System')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Project 2 -->
+        <div class="project-card filter-item web">
+          <div class="card-image">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">E-Commerce Platform</h3>
+            <p class="text-gray-600 mb-4">Full-featured online store with cart, checkout, payment integration, and admin panel.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 200,000</span>
+              <button onclick="requestProject('E-Commerce Platform')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Project 3 -->
+        <div class="project-card filter-item web">
+          <div class="card-image">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">University Portal System</h3>
+            <p class="text-gray-600 mb-4">Student information system with registration, results, and course management.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 180,000</span>
+              <button onclick="requestProject('University Portal System')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Project 1 -->
+        <div class="project-card filter-item mobile">
+          <div class="card-image">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Dart</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Food Delivery App</h3>
+            <p class="text-gray-600 mb-4">Uber Eats clone with restaurant listings, ordering, tracking, and delivery management.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 250,000</span>
+              <button onclick="requestProject('Food Delivery App')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Project 2 -->
+        <div class="project-card filter-item mobile">
+          <div class="card-image">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Health & Fitness Tracker</h3>
+            <p class="text-gray-600 mb-4">Track workouts, nutrition, and health metrics with progress charts and reminders.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 220,000</span>
+              <button onclick="requestProject('Health & Fitness Tracker')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desktop Project 1 -->
+        <div class="project-card filter-item desktop">
+          <div class="card-image">
+            <i class="fas fa-cash-register"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">JavaFX</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">POS System</h3>
+            <p class="text-gray-600 mb-4">Point of Sale system with inventory, sales tracking, and receipt generation.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 180,000</span>
+              <button onclick="requestProject('POS System')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AI Project 1 -->
+        <div class="project-card filter-item ai">
+          <div class="card-image">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">TensorFlow</span>
+              <span class="project-tag">OpenCV</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Face Recognition Attendance</h3>
+            <p class="text-gray-600 mb-4">AI-powered attendance system using facial recognition technology.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 300,000</span>
+              <button onclick="requestProject('Face Recognition Attendance')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AI Project 2 -->
+        <div class="project-card filter-item ai">
+          <div class="card-image">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Flask</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">AI Chatbot</h3>
+            <p class="text-gray-600 mb-4">Intelligent chatbot for customer service with natural language processing.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 250,000</span>
+              <button onclick="requestProject('AI Chatbot')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desktop Project 2 -->
+        <div class="project-card filter-item desktop">
+          <div class="card-image">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap mb-3">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET</span>
+              <span class="project-tag">SQL Server</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Library Management System</h3>
+            <p class="text-gray-600 mb-4">Complete library system with book cataloging, borrowing, and member management.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-accent-gold font-bold">From UGX 160,000</span>
+              <button onclick="requestProject('Library Management System')" class="text-primary-blue font-semibold hover:text-primary-dark">
+                Request <i class="fas fa-arrow-right ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="section-title">What's Included?</h2>
+          <p class="text-gray-600 mb-8 text-lg">Every project comes complete with everything you need for submission and presentation.</p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary-dark">Complete Source Code</h4>
+                <p class="text-gray-600 text-sm">Well-commented, organized, and easy to understand</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-file-alt text-green-600 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary-dark">Project Documentation</h4>
+                <p class="text-gray-600 text-sm">SRS, design documents, and user manuals</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-database text-green-600 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary-dark">Database Schema</h4>
+                <p class="text-gray-600 text-sm">ER diagrams and SQL scripts</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-video text-green-600 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary-dark">Demo Video</h4>
+                <p class="text-gray-600 text-sm">Screen recording of system functionality</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-headset text-green-600 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-primary-dark">1-Month Support</h4>
+                <p class="text-gray-600 text-sm">Free support for bug fixes and questions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-r from-primary-blue to-accent-gold rounded-3xl opacity-20 blur-xl"></div>
+          <div class="relative bg-white rounded-2xl shadow-xl p-8">
+            <div class="text-center mb-6">
+              <i class="fas fa-graduation-cap text-5xl text-accent-gold mb-4"></i>
+              <h3 class="text-2xl font-bold text-primary-dark">Student Success Package</h3>
+              <p class="text-gray-600">Everything you need to excel</p>
+            </div>
+            
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-gray-700">Original, plagiarism-free code</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-gray-700">Customized to your requirements</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-gray-700">On-time delivery guaranteed</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-gray-700">Presentation preparation tips</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i class="fas fa-check text-green-500"></i>
+                <span class="text-gray-700">Viva question preparation</span>
+              </li>
+            </ul>
+            
+            <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20a%20student%20and%20need%20help%20with%20my%20final%20year%20project." target="_blank" class="btn-primary block text-center w-full">
+              <i class="fab fa-whatsapp mr-2"></i>Get Started Today
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title mx-auto">Student-Friendly Pricing</h2>
+        <p class="section-subtitle">Affordable packages designed for students</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Basic Package -->
+        <div class="pricing-card">
+          <h3 class="font-bold text-primary-dark text-xl mb-2">Basic</h3>
+          <p class="text-gray-600 text-sm mb-6">Simple projects with core features</p>
+          <div class="text-4xl font-bold text-primary-dark mb-6">UGX 100K<span class="text-lg text-gray-500">+</span></div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Single module system</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Basic documentation</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Source code</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">2 weeks support</span>
+            </li>
+          </ul>
+          <button onclick="requestProject('Basic Package')" class="btn-outline w-full">Choose Basic</button>
+        </div>
+        
+        <!-- Standard Package -->
+        <div class="pricing-card featured">
+          <h3 class="font-bold text-primary-dark text-xl mb-2">Standard</h3>
+          <p class="text-gray-600 text-sm mb-6">Most popular for final year projects</p>
+          <div class="text-4xl font-bold text-primary-dark mb-6">UGX 200K<span class="text-lg text-gray-500">+</span></div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Multi-module system</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Complete documentation</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Source code + Database</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Demo video</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">1 month support</span>
+            </li>
+          </ul>
+          <button onclick="requestProject('Standard Package')" class="btn-primary w-full">Choose Standard</button>
+        </div>
+        
+        <!-- Premium Package -->
+        <div class="pricing-card">
+          <h3 class="font-bold text-primary-dark text-xl mb-2">Premium</h3>
+          <p class="text-gray-600 text-sm mb-6">Complex systems with advanced features</p>
+          <div class="text-4xl font-bold text-primary-dark mb-6">UGX 350K<span class="text-lg text-gray-500">+</span></div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Enterprise-level system</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Professional documentation</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Full source + Mobile app</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">Presentation coaching</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-gray-600">3 months support</span>
+            </li>
+          </ul>
+          <button onclick="requestProject('Premium Package')" class="btn-outline w-full">Choose Premium</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-dark to-primary-blue">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-['Playfair_Display']">Have a Custom Project Idea?</h2>
+      <p class="text-xl text-gray-300 mb-10">We can build any type of system you need. Share your idea with us and we'll bring it to life.</p>
+      <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I%20have%20a%20custom%20project%20idea%20and%20would%20like%20to%20discuss%20it." target="_blank" class="btn-primary inline-block">
+        <i class="fab fa-whatsapp mr-2"></i>Discuss Your Idea
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-accent-gold rounded-lg flex items-center justify-center">
+              <i class="fas fa-rocket text-primary-dark"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg font-['Playfair_Display']">Ivory Tech Hub</h3>
+          </div>
+          <p class="text-gray-400 mb-6">Empowering students and businesses with innovative technology solutions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="projects.html" class="footer-link">For Students</a></li>
+            <li><a href="business.html" class="footer-link">Business Solutions</a></li>
+            <li><a href="source-code.html" class="footer-link">Free Source Code</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Popular Projects</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="footer-link">Hospital Management</a></li>
+            <li><a href="#" class="footer-link">E-Commerce Platform</a></li>
+            <li><a href="#" class="footer-link">School System</a></li>
+            <li><a href="#" class="footer-link">POS System</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Contact</h4>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+              <i class="fab fa-whatsapp text-accent-gold"></i>
+              <span class="text-gray-400">0706131928</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-accent-gold"></i>
+              <span class="text-gray-400">emmanuelniringiyimaana@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2024 Ivory Tech Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I'm%20a%20student%20and%20need%20help%20with%20my%20final%20year%20project." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    function requestProject(projectName) {
+      const message = `Hello Ivory Tech Hub! I'm interested in the project: ${projectName}. Please provide more information about pricing and timeline.`;
+      const phoneNumber = '256706131928';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>

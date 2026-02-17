@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Source Code | Download Templates & Small Systems | Ivory Tech Hub</title>
+  <meta name="description" content="Download free source code, templates, and small systems for your projects. PHP, Python, JavaScript, and more. Perfect for learning and development.">
+  <meta name="keywords" content="free source code, templates, download, PHP, Python, JavaScript, React, learning resources, student projects">
+  <meta name="author" content="Ivory Tech Hub">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Free Source Code | Ivory Tech Hub">
+  <meta property="og:description" content="Download free templates and small systems for your projects.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              dark: '#1a365d',
+              DEFAULT: '#2c5282',
+              light: '#4299e1'
+            },
+            accent: {
+              gold: '#d4af37',
+              ivory: '#fffff0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center">
+            <i class="fas fa-rocket text-primary-dark text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-xl font-['Playfair_Display']">Ivory Tech Hub</h1>
+            <p class="text-gray-300 text-xs">Innovate. Create. Succeed.</p>
+          </div>
+        </a>
+        
+        <div class="desktop-nav hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link text-white font-medium">Home</a>
+          <a href="projects.html" class="nav-link text-white font-medium">For Students</a>
+          <a href="business.html" class="nav-link text-white font-medium">Business Solutions</a>
+          <a href="source-code.html" class="nav-link text-white font-medium active">Free Code</a>
+          <a href="testimonials.html" class="nav-link text-white font-medium">Testimonials</a>
+          <a href="about.html" class="nav-link text-white font-medium">About</a>
+          <a href="contact.html" class="btn-primary text-sm">Contact Us</a>
+        </div>
+        
+        <button id="mobileMenuBtn" class="mobile-menu-btn md:hidden text-white p-2">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="mobileMenuClose" class="absolute top-6 right-6 text-white text-2xl">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="index.html" class="mobile-menu-link">Home</a>
+    <a href="projects.html" class="mobile-menu-link">For Students</a>
+    <a href="business.html" class="mobile-menu-link">Business Solutions</a>
+    <a href="source-code.html" class="mobile-menu-link active">Free Source Code</a>
+    <a href="testimonials.html" class="mobile-menu-link">Testimonials</a>
+    <a href="about.html" class="mobile-menu-link">About</a>
+    <a href="contact.html" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-block px-4 py-2 bg-white/10 rounded-full mb-6">
+          <span class="text-accent-gold font-semibold text-sm">💻 Free Resources</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-['Playfair_Display']">
+          Free <span class="text-accent-gold">Source Code</span> & Templates
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Download free templates, small systems, and code snippets to kickstart your learning journey. Perfect for students and beginners.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#free-downloads" class="btn-primary">
+            <i class="fas fa-download mr-2"></i>Browse Downloads
+          </a>
+          <a href="projects.html" class="btn-secondary">
+            <i class="fas fa-graduation-cap mr-2"></i>Custom Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Filter Section -->
+  <section class="section-padding bg-gray-50" id="free-downloads">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="section-title mx-auto">Browse Free Resources</h2>
+        <p class="section-subtitle">Download and use these resources for learning and development</p>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="max-w-2xl mx-auto mb-10">
+        <div class="relative">
+          <input type="text" id="searchInput" placeholder="Search for templates, systems, or technologies..." 
+            class="w-full px-6 py-4 pl-14 bg-white border-2 border-gray-200 rounded-xl focus:border-primary-blue focus:outline-none text-lg">
+          <i class="fas fa-search absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-xl"></i>
+        </div>
+      </div>
+      
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button class="filter-btn active px-6 py-2 bg-primary-blue text-white rounded-full font-medium" data-filter="all">All</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="php">PHP</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="python">Python</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="react">React</button>
+        <button class="filter-btn px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300" data-filter="template">Templates</button>
+      </div>
+      
+      <!-- Resources Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="searchResults">
+        <!-- Resource 1 -->
+        <div class="project-card filter-item php search-item">
+          <div class="card-image">
+            <i class="fab fa-php"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 1.2k</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Simple Blog System</h3>
+            <p class="text-gray-600 mb-4">A basic blog system with posts, categories, and comments. Great for learning PHP and MySQL.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/simple-blog" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 2 -->
+        <div class="project-card filter-item php search-item">
+          <div class="card-image">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 850</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">User Authentication System</h3>
+            <p class="text-gray-600 mb-4">Complete login/register system with password reset, email verification, and session management.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">JWT</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/user-auth" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 3 -->
+        <div class="project-card filter-item python search-item">
+          <div class="card-image">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 620</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Task Manager CLI</h3>
+            <p class="text-gray-600 mb-4">Command-line task manager with CRUD operations, categories, and priority levels.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">SQLite</span>
+              <span class="project-tag">CLI</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/task-manager" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 4 -->
+        <div class="project-card filter-item javascript search-item">
+          <div class="card-image">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 1.5k</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Weather App</h3>
+            <p class="text-gray-600 mb-4">Simple weather application using OpenWeatherMap API with location search.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">API</span>
+              <span class="project-tag">CSS</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/weather-app" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 5 -->
+        <div class="project-card filter-item react search-item">
+          <div class="card-image">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 980</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Todo List App</h3>
+            <p class="text-gray-600 mb-4">Modern todo list application with React hooks, local storage, and responsive design.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Hooks</span>
+              <span class="project-tag">LocalStorage</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/react-todo" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 6 -->
+        <div class="project-card filter-item template search-item">
+          <div class="card-image">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 2.1k</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Admin Dashboard Template</h3>
+            <p class="text-gray-600 mb-4">Clean and modern admin dashboard template with charts, tables, and responsive sidebar.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/admin-template" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 7 -->
+        <div class="project-card filter-item python search-item">
+          <div class="card-image">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 430</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Calculator GUI</h3>
+            <p class="text-gray-600 mb-4">Desktop calculator application built with Python Tkinter. Includes basic operations.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Tkinter</span>
+              <span class="project-tag">GUI</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/calculator-gui" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 8 -->
+        <div class="project-card filter-item javascript search-item">
+          <div class="card-image">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 760</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Pomodoro Timer</h3>
+            <p class="text-gray-600 mb-4">Productivity timer with work/break intervals, notifications, and progress tracking.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/pomodoro-timer" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Resource 9 -->
+        <div class="project-card filter-item template search-item">
+          <div class="card-image">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-free">FREE</span>
+              <span class="text-gray-500 text-sm"><i class="fas fa-download mr-1"></i> 1.8k</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Portfolio Website Template</h3>
+            <p class="text-gray-600 mb-4">Responsive portfolio template for developers and designers. Easy to customize.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <a href="https://github.com/eniringiyimaana/portfolio-template" target="_blank" class="download-btn free w-full justify-center">
+              <i class="fab fa-github"></i> Download from GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Resources Section -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="section-title mx-auto">Premium Resources</h2>
+        <p class="section-subtitle">Advanced systems with more features and professional support</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Premium 1 -->
+        <div class="project-card border-2 border-accent-gold">
+          <div class="card-image bg-gradient-to-br from-accent-gold to-yellow-600">
+            <i class="fas fa-hospital text-primary-dark"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-premium">PREMIUM</span>
+              <span class="text-accent-gold font-bold">UGX 150,000</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">Hospital Management System</h3>
+            <p class="text-gray-600 mb-4">Complete HMS with patient records, appointments, billing, pharmacy, and reporting.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">AJAX</span>
+            </div>
+            <button onclick="downloadPremium('Hospital Management System')" class="download-btn premium w-full justify-center">
+              <i class="fab fa-whatsapp"></i> Request via WhatsApp
+            </button>
+          </div>
+        </div>
+        
+        <!-- Premium 2 -->
+        <div class="project-card border-2 border-accent-gold">
+          <div class="card-image bg-gradient-to-br from-accent-gold to-yellow-600">
+            <i class="fas fa-shopping-bag text-primary-dark"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-premium">PREMIUM</span>
+              <span class="text-accent-gold font-bold">UGX 200,000</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">E-Commerce Platform</h3>
+            <p class="text-gray-600 mb-4">Full-featured online store with cart, checkout, Mobile Money payments, and admin panel.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <button onclick="downloadPremium('E-Commerce Platform')" class="download-btn premium w-full justify-center">
+              <i class="fab fa-whatsapp"></i> Request via WhatsApp
+            </button>
+          </div>
+        </div>
+        
+        <!-- Premium 3 -->
+        <div class="project-card border-2 border-accent-gold">
+          <div class="card-image bg-gradient-to-br from-accent-gold to-yellow-600">
+            <i class="fas fa-school text-primary-dark"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge badge-premium">PREMIUM</span>
+              <span class="text-accent-gold font-bold">UGX 180,000</span>
+            </div>
+            <h3 class="font-bold text-primary-dark text-xl mb-2">School Management System</h3>
+            <p class="text-gray-600 mb-4">Complete school system with students, teachers, exams, results, and fee management.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">Bootstrap</span>
+            </div>
+            <button onclick="downloadPremium('School Management System')" class="download-btn premium w-full justify-center">
+              <i class="fab fa-whatsapp"></i> Request via WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Download Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="section-title">How to Download</h2>
+          <p class="text-gray-600 mb-8 text-lg">Getting started with our resources is easy. Follow these simple steps:</p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-primary-blue rounded-lg flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
+              <div>
+                <h4 class="font-bold text-primary-dark text-lg">Browse & Select</h4>
+                <p class="text-gray-600">Find the resource you need from our collection of free and premium resources.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-primary-blue rounded-lg flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
+              <div>
+                <h4 class="font-bold text-primary-dark text-lg">Free Resources</h4>
+                <p class="text-gray-600">Click the download button to go to GitHub. Clone or download the ZIP file directly.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center flex-shrink-0 text-primary-dark font-bold">3</div>
+              <div>
+                <h4 class="font-bold text-primary-dark text-lg">Premium Resources</h4>
+                <p class="text-gray-600">Click the WhatsApp button, send payment via Mobile Money, and receive your download link.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="payment-card">
+          <h3 class="text-2xl font-bold mb-6 flex items-center">
+            <i class="fas fa-mobile-alt mr-3 text-accent-gold"></i>
+            Payment Instructions
+          </h3>
+          <p class="text-gray-300 mb-6">For premium resources, pay via Mobile Money and share the screenshot on WhatsApp.</p>
+          
+          <div class="space-y-4">
+            <div class="payment-step">
+              <div class="payment-step-number">1</div>
+              <div>
+                <h4 class="font-bold">MTN Mobile Money</h4>
+                <p class="text-gray-300 text-sm">Send to: <span class="text-accent-gold font-mono">0706131928</span></p>
+              </div>
+            </div>
+            
+            <div class="payment-step">
+              <div class="payment-step-number">2</div>
+              <div>
+                <h4 class="font-bold">Airtel Money</h4>
+                <p class="text-gray-300 text-sm">Send to: <span class="text-accent-gold font-mono">0706131928</span></p>
+              </div>
+            </div>
+            
+            <div class="payment-step">
+              <div class="payment-step-number">3</div>
+              <div>
+                <h4 class="font-bold">Send Screenshot</h4>
+                <p class="text-gray-300 text-sm">Share payment screenshot via WhatsApp with the resource name.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I%20have%20made%20a%20payment%20for%20a%20premium%20resource." target="_blank" class="btn-primary block text-center mt-6 w-full">
+            <i class="fab fa-whatsapp mr-2"></i>Send Screenshot
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-dark to-primary-blue">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 font-['Playfair_Display']">Need a Custom Solution?</h2>
+      <p class="text-xl text-gray-300 mb-10">Our free resources are great for learning, but if you need a custom-built system, we're here to help!</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="projects.html" class="btn-primary">
+          <i class="fas fa-graduation-cap mr-2"></i>For Students
+        </a>
+        <a href="business.html" class="btn-secondary">
+          <i class="fas fa-briefcase mr-2"></i>For Businesses
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-accent-gold rounded-lg flex items-center justify-center">
+              <i class="fas fa-rocket text-primary-dark"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg font-['Playfair_Display']">Ivory Tech Hub</h3>
+          </div>
+          <p class="text-gray-400 mb-6">Empowering the next generation of developers with free resources and professional solutions.</p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Resources</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="footer-link">Free Source Code</a></li>
+            <li><a href="#" class="footer-link">Templates</a></li>
+            <li><a href="#" class="footer-link">Tutorials</a></li>
+            <li><a href="#" class="footer-link">Documentation</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="projects.html" class="footer-link">Student Projects</a></li>
+            <li><a href="business.html" class="footer-link">Business Solutions</a></li>
+            <li><a href="contact.html" class="footer-link">Custom Development</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">Connect</h4>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+              <i class="fab fa-github text-accent-gold"></i>
+              <span class="text-gray-400">github.com/eniringiyimaana</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fab fa-whatsapp text-accent-gold"></i>
+              <span class="text-gray-400">0706131928</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2024 Ivory Tech Hub. All resources are open source under MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/256706131928?text=Hello%20Ivory%20Tech%20Hub!%20I%20have%20a%20question%20about%20your%20source%20code." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    function downloadPremium(resourceName) {
+      const message = `Hello Ivory Tech Hub! I'm interested in purchasing the premium resource: ${resourceName}. Please send me the payment instructions.`;
+      const phoneNumber = '256706131928';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
