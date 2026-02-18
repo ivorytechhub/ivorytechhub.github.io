@@ -168,56 +168,61 @@
       <div class="grid lg:grid-cols-2 gap-16">
         <!-- Contact Form -->
         <div>
-          <h2 class="section-title">Send Us a Message</h2>
-          <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
-          
-          <form id="contactForm" class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="form-label">Your Name *</label>
-                <input type="text" name="name" required class="form-input" placeholder="John Doe">
-              </div>
-              <div>
-                <label class="form-label">Your Email *</label>
-                <input type="email" name="email" required class="form-input" placeholder="john@example.com">
-              </div>
-            </div>
-            
-            <div>
-              <label class="form-label">Phone Number</label>
-              <input type="tel" name="phone" class="form-input" placeholder="0706131928">
-            </div>
-            
-            <div>
-              <label class="form-label">Subject *</label>
-              <select name="subject" required class="form-input">
-                <option value="">Select a subject</option>
-                <option value="student-project">Student Project Inquiry</option>
-                <option value="business-solution">Business Solution Inquiry</option>
-                <option value="free-source-code">Free Source Code Question</option>
-                <option value="premium-resource">Premium Resource Purchase</option>
-                <option value="support">Technical Support</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            
-            <div>
-              <label class="form-label">Message *</label>
-              <textarea name="message" required rows="5" class="form-input" placeholder="Tell us about your project or question..."></textarea>
-            </div>
-            
-            <button type="submit" class="btn-primary w-full">
-              <i class="fas fa-paper-plane mr-2"></i>Send Message
-            </button>
-          </form>
-          
-          <div class="mt-6 p-4 bg-blue-50 rounded-lg">
-            <p class="text-sm text-primary-blue">
-              <i class="fas fa-info-circle mr-2"></i>
-              <strong>Tip:</strong> For faster response, reach out via WhatsApp. We typically respond within 1-2 hours during business hours.
-            </p>
-          </div>
-        </div>
+  <h2 class="section-title">Send Us a Message</h2>
+  <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+  
+  <!-- Status Message Container (add this right before the form) -->
+  <div id="formStatus" class="mb-6 hidden">
+    <div class="p-4 rounded-lg" id="statusMessage"></div>
+  </div>
+  
+  <form id="contactForm" class="space-y-6">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <label class="form-label">Your Name *</label>
+        <input type="text" name="name" required class="form-input" placeholder="John Doe">
+      </div>
+      <div>
+        <label class="form-label">Your Email *</label>
+        <input type="email" name="email" required class="form-input" placeholder="john@example.com">
+      </div>
+    </div>
+    
+    <div>
+      <label class="form-label">Phone Number</label>
+      <input type="tel" name="phone" class="form-input" placeholder="0706131928">
+    </div>
+    
+    <div>
+      <label class="form-label">Subject *</label>
+      <select name="subject" required class="form-input">
+        <option value="">Select a subject</option>
+        <option value="student-project">Student Project Inquiry</option>
+        <option value="business-solution">Business Solution Inquiry</option>
+        <option value="free-source-code">Free Source Code Question</option>
+        <option value="premium-resource">Premium Resource Purchase</option>
+        <option value="support">Technical Support</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div>
+      <label class="form-label">Message *</label>
+      <textarea name="message" required rows="5" class="form-input" placeholder="Tell us about your project or question..."></textarea>
+    </div>
+    
+    <button type="submit" id="submitBtn" class="btn-primary w-full">
+      <i class="fas fa-paper-plane mr-2"></i>Send Message
+    </button>
+  </form>
+  
+  <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+    <p class="text-sm text-primary-blue">
+      <i class="fas fa-info-circle mr-2"></i>
+      <strong>Tip:</strong> For faster response, reach out via WhatsApp. We typically respond within 1-2 hours during business hours.
+    </p>
+  </div>
+</div>
         
         <!-- Payment Information -->
         <div>
@@ -489,35 +494,100 @@
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
+
   <script>
-    // Form submission handler
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Get form data
-      const formData = new FormData(this);
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const subject = formData.get('subject');
-      const message = formData.get('message');
-      
-      // Create WhatsApp message
-      const whatsappMessage = `Hello Ivory Tech Hub!\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
-      
-      // Open WhatsApp with pre-filled message
-      const phoneNumber = '256706131928';
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-      window.open(whatsappUrl, '_blank');
-    });
+  // Google Apps Script Web App URL - REPLACE WITH YOUR ACTUAL URL
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzHSyh_94K1wtomuU03TKCH2mDH_gCosJddD91LTi5F3ljAesaPFmKbg9pvbeYrBzAt/exec'; // ← Change this to your actual Apps Script URL
+  
+  // Form submission handler
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
     
-    // Copy to clipboard function
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Phone number copied to clipboard!');
-      }).catch(() => {
-        alert('Failed to copy. Please copy manually.');
+    // Get the submit button and disable it
+    const submitBtn = document.getElementById('submitBtn');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+    submitBtn.disabled = true;
+    
+    // Get form data
+    const formData = new FormData(this);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone') || 'Not provided';
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+    
+    // Prepare data for Google Sheets
+    const formDataForGoogle = new FormData();
+    formDataForGoogle.append('name', name);
+    formDataForGoogle.append('email', email);
+    formDataForGoogle.append('phone', phone);
+    formDataForGoogle.append('subject', subject);
+    formDataForGoogle.append('message', message);
+    
+    try {
+      // Send to Google Apps Script
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        body: formDataForGoogle,
+        mode: 'no-cors' // Important for Google Apps Script
       });
+      
+      // Show success message
+      showStatus('success', '✅ Message sent successfully! We\'ll get back to you soon.');
+      
+      // Clear the form
+      this.reset();
+      
+    } catch (error) {
+      // If email fails, show error but don't lose the message
+      console.error('Error:', error);
+      showStatus('error', '❌ Failed to send message. Please try again or contact us via WhatsApp directly.');
+      
+    } finally {
+      // Re-enable submit button after 3 seconds
+      setTimeout(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }, 3000);
     }
-  </script>
+  });
+  
+  // Function to show status messages
+  function showStatus(type, message) {
+    const statusDiv = document.getElementById('formStatus');
+    const messageDiv = document.getElementById('statusMessage');
+    
+    // Remove hidden class
+    statusDiv.classList.remove('hidden');
+    
+    // Set message
+    messageDiv.innerHTML = message;
+    
+    // Set colors based on type
+    if (type === 'success') {
+      messageDiv.className = 'p-4 rounded-lg bg-green-100 text-green-700 border border-green-200';
+    } else if (type === 'error') {
+      messageDiv.className = 'p-4 rounded-lg bg-red-100 text-red-700 border border-red-200';
+    } else {
+      messageDiv.className = 'p-4 rounded-lg bg-yellow-100 text-yellow-700 border border-yellow-200';
+    }
+    
+    // Auto-hide after 10 seconds
+    setTimeout(() => {
+      statusDiv.classList.add('hidden');
+    }, 10000);
+  }
+  
+  // Copy to clipboard function (keep your existing function)
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Phone number copied to clipboard!');
+    }).catch(() => {
+      alert('Failed to copy. Please copy manually.');
+    });
+  }
+</script>
+
 </body>
 </html>
