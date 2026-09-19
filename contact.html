@@ -13,9 +13,26 @@
   <meta property="og:title" content="Contact Us | Ivory Tech Hub">
   <meta property="og:description" content="Get in touch for project inquiries and support.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ivorytechhub.github.io/contact.html">
+  <meta property="og:image" content="images/logo.jpeg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us | Ivory Tech Hub">
+  <meta name="twitter:description" content="Get in touch for project inquiries and support.">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <link rel="apple-touch-icon" href="images/logo.jpeg">
+  
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vj7bksznpd");
+  </script>
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -52,9 +69,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <a href="index.html" class="flex items-center space-x-3">
-          <div class="w-12 h-12 bg-accent-gold rounded-lg flex items-center justify-center">
-            <i class="fas fa-rocket text-primary-dark text-xl"></i>
-          </div>
+          <img src="images/logo.jpeg" alt="Ivory Tech Hub Logo" class="w-12 h-12 rounded-lg object-cover">
           <div>
             <h1 class="text-white font-bold text-xl font-['Playfair_Display']">Ivory Tech Hub</h1>
             <p class="text-gray-300 text-xs">Innovate. Create. Succeed.</p>
@@ -63,7 +78,6 @@
         
         <div class="desktop-nav hidden md:flex items-center space-x-8">
           <a href="index.html" class="nav-link text-white font-medium">Home</a>
-          <a href="projects.html" class="nav-link text-white font-medium">For Students</a>
           <a href="business.html" class="nav-link text-white font-medium">Business Solutions</a>
           <a href="source-code.html" class="nav-link text-white font-medium">Free Code</a>
           <a href="testimonials.html" class="nav-link text-white font-medium">Testimonials</a>
@@ -84,7 +98,6 @@
       <i class="fas fa-times"></i>
     </button>
     <a href="index.html" class="mobile-menu-link">Home</a>
-    <a href="projects.html" class="mobile-menu-link">For Students</a>
     <a href="business.html" class="mobile-menu-link">Business Solutions</a>
     <a href="source-code.html" class="mobile-menu-link">Free Source Code</a>
     <a href="testimonials.html" class="mobile-menu-link">Testimonials</a>
@@ -435,21 +448,34 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <div>
           <div class="flex items-center space-x-3 mb-6">
-            <div class="w-10 h-10 bg-accent-gold rounded-lg flex items-center justify-center">
-              <i class="fas fa-rocket text-primary-dark"></i>
-            </div>
+            <img src="images/logo.jpeg" alt="Ivory Tech Hub Logo" class="w-10 h-10 rounded-lg object-cover">
             <h3 class="text-white font-bold text-lg font-['Playfair_Display']">Ivory Tech Hub</h3>
           </div>
           <p class="text-gray-400 mb-6">Your trusted partner for academic and business technology solutions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent-gold hover:text-primary-dark transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
         
         <div>
           <h4 class="text-white font-bold mb-6">Quick Links</h4>
           <ul class="space-y-3">
             <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="projects.html" class="footer-link">For Students</a></li>
             <li><a href="business.html" class="footer-link">Business Solutions</a></li>
             <li><a href="source-code.html" class="footer-link">Free Source Code</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
           </ul>
         </div>
         
@@ -481,8 +507,12 @@
         </div>
       </div>
       
-      <div class="border-t border-white/10 pt-8 text-center">
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-400 text-sm">&copy; 2024 Ivory Tech Hub. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 text-sm hover:text-accent-gold">Privacy Policy</a>
+          <a href="#" class="text-gray-400 text-sm hover:text-accent-gold">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -579,14 +609,7 @@
     }, 10000);
   }
   
-  // Copy to clipboard function (keep your existing function)
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Phone number copied to clipboard!');
-    }).catch(() => {
-      alert('Failed to copy. Please copy manually.');
-    });
-  }
+  // Copy to clipboard uses the toast-based window.copyToClipboard from main.js
 </script>
 
 </body>
